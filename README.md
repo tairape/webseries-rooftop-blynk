@@ -11,3 +11,4 @@ This is a repository of the lighting project that will be located on the roof of
 
 # Circuit
 ![circuit](https://github.com/tairape/webseries-rooftop/assets/8051211/93e80001-fcd7-4a0d-9548-ceda5ee2490b)
+![circuit_2](https://github.com/tairape/webseries-rooftop/assets/8051211/5896ae0a-40c0-4fe5-9c1d-ebdad7d84fa2)
