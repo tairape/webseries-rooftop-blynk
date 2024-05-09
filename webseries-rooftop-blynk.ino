@@ -15,7 +15,7 @@ int PauseTime = 200;
 SerialRelay relays(4, 5, NumModules);  //4 data, 5 clock, NumModules: numero de modulos
 
 #include <Arduino.h>
-#include <ESP8266_Lib.h>
+#include <ESP8266_Lib.h>/Users/brunonepomuceno/Documents/Arduino/webseries/webseries-rooftop-blynk/README.md
 #include <BlynkSimpleShieldEsp8266.h>
 
 // Your WiFi credentials.
