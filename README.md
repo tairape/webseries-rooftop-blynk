@@ -1,4 +1,4 @@
-# webseries-rooftop-blyk
+# webseries-rooftop-blynk
 This is a repository of the lighting project that will be located on the roof of the Samambaia Complex.
 
 # List of materials
