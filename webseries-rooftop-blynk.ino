@@ -1,6 +1,6 @@
 /* Fill-in information from Blynk Device Info here */
 #define BLYNK_TEMPLATE_ID "TMPL28NFKSsNi"
-#define BLYNK_TEMPLATE_NAME "Webseries"
+#define BLYNK_TEMPLATE_NAME "webseries-rooftop"
 #define BLYNK_AUTH_TOKEN "FlDTcY9bMDLx_tRaRZrt-tTqGGAcraI3"
 
 #define BLYNK_FIRMWARE_VERSION "0.1.0"
