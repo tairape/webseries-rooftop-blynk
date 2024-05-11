@@ -15,7 +15,7 @@ int PauseTime = 200;
 SerialRelay relays(4, 5, NumModules);  //4 data, 5 clock, NumModules: numero de modulos
 
 #include <Arduino.h>
-#include <ESP8266_Lib.h>/Users/brunonepomuceno/Documents/Arduino/webseries/webseries-rooftop-blynk/README.md
+#include <ESP8266_Lib.h>
 #include <BlynkSimpleShieldEsp8266.h>
 
 // Your WiFi credentials.
@@ -47,10 +47,6 @@ BLYNK_WRITE(V1) {  // Run this "sequencial" function while V1 pin switch.
   int pinValue = param.asInt();  // Get status of V0.
   if (pinValue == 1) {           // If status of V1 is 1 then do stuff in if().
 
-    // Blynk.virtualWrite(V2, 0);  // Turn the widget attached to V2 Off
-    // Blynk.virtualWrite(V3, 0);  // Turn the widget attached to V3 Off
-    // Blynk.virtualWrite(V4, 0);  // Turn the widget attached to V4 Off
-
     // turn on one by one starting from relay 1 & module 1
     for (int i = 1; i <= NumModules; i++) {
       for (int j = 1; j <= 4; j++) {
@@ -79,10 +75,6 @@ BLYNK_WRITE(V2) {  // Run this "random" function while V2 pin switch
 
   if (pinValue == 1) {
 
-    // Blynk.virtualWrite(V1, 0);  // Turn the widget attached to V1 Off
-    // Blynk.virtualWrite(V3, 0);  // Turn the widget attached to V3 Off
-    // Blynk.virtualWrite(V4, 0);  // Turn the widget attached to V4 Off
-
     int numOperations = random(5, 15);  // Número aleatório de operações
     for (int k = 0; k < numOperations; k++) {
       int module = random(1, NumModules + 1);
@@ -105,10 +97,6 @@ BLYNK_WRITE(V2) {  // Run this "random" function while V2 pin switch
 BLYNK_WRITE(V3) {
   int pinValue = param.asInt();
   if (pinValue == 1) {
-
-    // Blynk.virtualWrite(V1, 0);  // Turn the widget attached to V1 Off
-    // Blynk.virtualWrite(V2, 0);  // Turn the widget attached to V2 Off
-    // Blynk.virtualWrite(V4, 0);  // Turn the widget attached to V4 Off
 
     const int relaysPerModule = 4;  // 4 relés por módulo
     const int totalRelays = NumModules * relaysPerModule;
@@ -170,10 +158,6 @@ BLYNK_WRITE(V3) {
 BLYNK_WRITE(V4) {  // Stobe
   int pinValue = param.asInt();
   if (pinValue == 1) {
-
-    // Blynk.virtualWrite(V1, 0);  // Turn the widget attached to V1 Off
-    // Blynk.virtualWrite(V2, 0);  // Turn the widget attached to V2 Off
-    // Blynk.virtualWrite(V3, 0);  // Turn the widget attached to V3 Off
 
     // Ligar todos os relés
     for (int i = 1; i <= 4; i++) {
